@@ -15,7 +15,7 @@ class _EditarEsdevenimentFormState extends State<EditarEsdevenimentForm> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Edició esdeveniment"),),
+      appBar: AppBar(title: const Text("Calendari Raul Tadeo"),),
       body: Column(
         children: [
           Row(children: [

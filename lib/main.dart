@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(
-        title: "My home page",
+        title: "Calendari Raul Tadeo",
       ),
     );
   }
