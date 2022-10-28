@@ -164,7 +164,7 @@ class EsdevenimentWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       title: Text(
-          "${DateFormat("yyyy-MM-dd HH:mm").format(esdeveniment.horaInici)}: ${esdeveniment.titol}"),
+          "${DateFormat("yyyy-MM-dd").format(esdeveniment.horaInici)}: ${esdeveniment.titol}: ${esdeveniment.descripcio}"),
     );
   }
 }
