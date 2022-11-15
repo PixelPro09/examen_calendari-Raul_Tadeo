@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      routes: {'/editar':(context)=>EditarEsdevenimentForm()},
       home: MyHomePage(
         title: "Calendari Raul Tadeo",
       ),
@@ -49,8 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
           LlistatEsdevenimentsWidget(llistaEsdeveniments: widget.elControlador.getListaEsdeveniments()),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          ScaffoldMessenger.of(context)
-              .showSnackBar(const SnackBar(content: Text("No implementat.")));
+          Navigator.of(context).pushNamed('/editar');
         },
         tooltip: 'Afegir esdeveniment',
         child: const Icon(Icons.add),
